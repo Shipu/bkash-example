@@ -10,7 +10,7 @@ $tokenized = new Tokenized($config[BkashSubDomainType::TOKENIZED]);
 
 $data = $_GET;
 
-if($data['execute'] == 'Agreement') {
+if($data['execute'] == 'Agreement' & $data['status'] != 'cancel') {
     $agreement = $tokenized->executeAgreement($data['paymentID']);
 
     $newQueryString = [
@@ -42,8 +42,7 @@ if($data['execute'] == 'Agreement') {
         $failedUrl = $data['failed_url'].'&msg='.$payment->statusMessage;
         header('Location: '.$failedUrl);
     }
+} else {
+    $failedUrl = $data['failed_url'].'&msg=cancel';
+    header('Location: '.$failedUrl);
 }
-
-
-
-
