@@ -1,0 +1,14 @@
+{
+    "name": "shipu/bkash-example",
+    "type": "library",
+    "require": {
+        "shipu/bkash": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shipu Ahamed",
+            "email": "shipuahamed01@gmail.com"
+        }
+    ]
+}

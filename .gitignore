@@ -1,0 +1,5 @@
+/vendor/
+/example
+.DS_Store
+.idea
+.env
