@@ -5,7 +5,7 @@
 
 # Installation
 
-Go to terminal and run this command
+Clone this repo. Go to this repo directory in terminal and run this command
 
 ```shell
 composer install
@@ -15,7 +15,7 @@ Wait for few minutes. Composer will automatically install this package for your 
 
 Update `.env` and run this command
 
-```php
+```shell
 php -S localhost:8003 -t .
 ```
 
